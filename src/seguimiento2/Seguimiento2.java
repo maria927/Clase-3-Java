@@ -19,37 +19,37 @@ public class Seguimiento2 {
     public static void main(String[] args) {
         
         //Primer punto utilizando for
-            // numerosUnoACienFor();
+             numerosUnoACienFor();
         
          //Primer punto utilizando while
-            // numerosUnoACienWhile();
+            numerosUnoACienWhile();
         
         //Segundo punto utilizando for
-            // numerosCienAUnoFor();
+             numerosCienAUnoFor();
         
         //Segundo punto utilizando for
-            //numerosCienAUnoWhile();
+            numerosCienAUnoWhile();
         
         //Tercer punto utilizando for
-            // numerosParesFor();
+             numerosParesFor();
             
          //Tercer punto utilizando while
-            //numerosParesWhile();
+            numerosParesWhile();
         
         //Cuarto Punto utilizando for
-            //sumaNumerosFor();
+            sumaNumerosFor();
         
         //Cuarto Punto utilizando while
-            //sumaNumerosWhile();
+            sumaNumerosWhile();
         
         //Quinto Punto utilizando for
-            //numeroDeAsteriscosFor();
+            numeroDeAsteriscosFor();
         
         //Quinto Punto utilizando while
-            //numeroDeAsteriscosWhile();
+            numeroDeAsteriscosWhile();
         
         //Sexto Punto utilizando for
-           // tablaParImparFor();
+           tablaParImparFor();
         
         //Sexto Punto utilizando while
             tablaParImparWhile();
@@ -225,7 +225,7 @@ public class Seguimiento2 {
                 System.out.print(mimatriz[fila][columna]);
                 columna++;
             }
-            
+            columna = 0;
             fila++;
             System.out.println(); 
             
