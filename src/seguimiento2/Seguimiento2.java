@@ -96,19 +96,20 @@ public class Seguimiento2 {
         String[][] mimatriz = new String[10][10];
         
         int contador = 0;
-        for (int fila = 1; fila < 10; fila++) {
+        for (int fila = 0; fila < 10; fila++) {
             for (int columna = 0; columna < 10; columna++) {
                 
-                contador = contador+1;
+                
+              
                 if (contador %2 == 0)
                 {
-                    mimatriz[fila][columna] = "X"; 
+                    mimatriz[fila][columna] = "X "; 
                 }
                 else
                 {
-                    mimatriz[fila][columna] = "O"; 
+                    mimatriz[fila][columna] = "O "; 
                 }
-                
+                contador = contador+1;
                 System.out.print(mimatriz[fila][columna]);
                 
             }
