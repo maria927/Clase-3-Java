@@ -19,7 +19,7 @@ public class Seguimiento2 {
     public static void main(String[] args) {
         
         //Primer punto utilizando for
-             numerosUnoACienFor();
+            numerosUnoACienFor();
         
          //Primer punto utilizando while
             numerosUnoACienWhile();
@@ -112,6 +112,7 @@ public class Seguimiento2 {
 
     private static void tablaParImparFor() {
        
+        System.out.println("Con for");
         String[][] mimatriz = new String[10][10];
         
         int contador = 0;
@@ -205,7 +206,7 @@ public class Seguimiento2 {
 
     private static void tablaParImparWhile() {
         
-        
+        System.out.println("Con while");
         String[][] mimatriz = new String[10][10];
         int contador = 0;
         int fila = 0;
