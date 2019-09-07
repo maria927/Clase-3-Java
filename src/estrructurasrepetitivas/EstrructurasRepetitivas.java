@@ -21,7 +21,10 @@ public class EstrructurasRepetitivas {
        // diasDeLaSemanaTxt();
         
         //Dias de la semana con while
-        diasDeLaSemanaWhile();
+        //diasDeLaSemanaWhile();
+        
+        //Matriz
+        impresionMatriz();
     }
     
     //Agregar a un arreglo los días de la semana
@@ -77,6 +80,23 @@ public class EstrructurasRepetitivas {
       
             
         }
+    
+    public static void impresionMatriz()
+    {
+        int[][] mimatriz = new int[5][4];
+        mimatriz[0][0]=5;
+        mimatriz[1][1]=6;
+        
+        for (int fila = 0; fila < 5; fila++) {
+            for (int columna = 0; columna < 4; columna++) {
+                
+                System.out.print(mimatriz[fila][columna]);
+            }
+            
+            System.out.println();   
+        }
+    }
+    
     }
     
 
