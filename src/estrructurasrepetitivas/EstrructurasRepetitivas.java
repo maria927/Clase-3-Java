@@ -57,8 +57,7 @@ public class EstrructurasRepetitivas {
         Scanner scanner = new Scanner(System.in);
         
         int i=0;
-        int numeroDias= 7;
-        while (i<numeroDias) {            
+        while (i<diasSemana.length) {            
           System.out.println("Ingrese el dia "+ (i+1)+" de la semana");
           String dia = scanner.nextLine();
           System.out.println("El día ingresado es: "+dia);
@@ -68,7 +67,7 @@ public class EstrructurasRepetitivas {
         
         i=0;
        
-        while (i<numeroDias) {
+        while (i<diasSemana.length) {
            
             String dia = diasSemana[i];
             System.out.println("El día de la semana es: "+dia);
