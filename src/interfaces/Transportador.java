@@ -9,6 +9,8 @@ package interfaces;
  *
  * @author Maria
  */
+
+//Las interfaces solo se usan para comportamientos
 public interface Transportador {
     
     public boolean horarioCumplido();
