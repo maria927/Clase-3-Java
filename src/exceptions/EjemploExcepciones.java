@@ -19,6 +19,30 @@ public class EjemploExcepciones {
      */
     public static void main(String[] args) {
        
+        
+        
+        try {
+            int number = 6;
+            
+            if (number<0) {
+               throw new MyNumberException(CodigoErrores.POSITIVOS); 
+            }
+            
+            if (number % 2 == 0) {
+                throw new MyNumberException(CodigoErrores.IMPARES);
+            }else{
+                throw new MyNumberException(CodigoErrores.PARES);
+            }
+            
+            
+        } catch (Exception e) {
+            
+            System.out.println("capturando la excepcion desde el main");
+            System.out.println("Excepcion: "+e);
+        }
+        
+        
+        
         try {
             //convertirNumeros();
             //lanzarExcepcion();

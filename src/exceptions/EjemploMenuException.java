@@ -63,6 +63,9 @@ public class EjemploMenuException {
             System.out.println("Capturar la excepción del menú");
             System.out.println(e);
         
+        } finally
+        {
+            System.out.println("El programa ha finalizado");
         }
        
 
