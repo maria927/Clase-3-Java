@@ -23,10 +23,22 @@ public class WrapperMain {
         
         //Objeto de tipo Double
         
-        Double wrapperSaldo = new Double("8000");
+        Double wrapperSaldo = new Double("500.9");
         boolean isNan= wrapperSaldo.isNaN();
+        int intSaldo= wrapperSaldo.intValue();
         
         System.out.println("Is nan "+isNan);
+        System.out.println("Int value "+intSaldo);
+        
+        //Convertir de int a Integer
+        int edad = 80;
+        //Forma  1
+        Integer wrapperEdad = new Integer(edad);
+        //Forma 2
+        Integer wrapperEdad2 = edad;
+        
+        System.out.println(wrapperEdad);
+        System.out.println(wrapperEdad2);
     }
     
 }
