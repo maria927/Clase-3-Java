@@ -37,6 +37,15 @@ public class EjemploListas {
             System.out.println(miEstudiante);
             boolean existeEstudiante = miLista.contains("Carlo");
             System.out.println("Existe: "+existeEstudiante);
+            
+            boolean seElimino =miLista.remove("Luis");
+            System.out.println("Se eliminó "+seElimino);
+            System.out.println(miLista);
+            
+            String seEliminoPosicion = miLista.remove(0);
+            System.out.println("Se elimino:"+seEliminoPosicion);
+            
+            System.out.println(miLista);
         } catch (Exception e) {
             System.out.println("Error "+e.getMessage());
         }
