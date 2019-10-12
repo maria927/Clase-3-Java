@@ -22,7 +22,7 @@ public class EjemploMaps {
     public static void main(String[] args) {
      
        // crearHashmap();
-         //crearTreemap();
+       //crearTreemap();
         crearLinkedMap();
     }
     
