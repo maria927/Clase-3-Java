@@ -19,7 +19,7 @@ public class EjemploClase {
     public static void main(String[] args) {
        
         
-        //Este ejemplo se hace sin streams para ver la diferencia 
+
         
         
         ArrayList<String> miLista = new ArrayList<>();
@@ -30,16 +30,24 @@ public class EjemploClase {
         miLista.add("catalina");
         miLista.add("eduardo");
         
-        for(int i=0;i<miLista.size();i++) {
-           
-            int nroCaracteres = miLista.get(i).length();
-            
-            if(nroCaracteres >= 6)
-            {
-              System.out.println(miLista.get(i).toUpperCase());
-            }
-            
-          }
+        //Con stream
+        miLista.stream()
+                .filter((elemento) -> { return elemento.length()>=6;})
+                .map((elemento)-> {return "Estudiante "+elemento.toUpperCase();})
+                .forEach((elemento) -> {System.out.println(elemento);});
+       
+                
+//            De la forma tradicional       
+//            for(int i=0;i<miLista.size();i++) {
+//           
+//            int nroCaracteres = miLista.get(i).length();
+//            
+//            if(nroCaracteres >= 6)
+//            {
+//              System.out.println(miLista.get(i).toUpperCase());
+//            }
+//            
+//          }
     }
     
 }
